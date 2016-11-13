@@ -1,0 +1,13 @@
+En el directorio "bin" tenemos el ejecutable y los datos guardados en la carpeta "datos"
+
+En el directorio "src" tenemos los ficheros: "data.cpp" donde se crea la matriz de datos con la que vamos a trabajar y se encarga de leer el fichero de datos, "funciones.cpp" que contiene las funciones que se usan más adelante como son -busquedaLocal();generarSolucion();funcionCoste();greedy();
+void ordenarPosiciones(vector<int> &salida, vector<int>origen);voltearVector();intercambiar();-, el fichero "main.cpp" desde el que llamamos a los metodos y que contiene el main, "random_ppio.cpp" para usar las funciones rand(), randint()... y el fichero  "AGG.cpp" que contiene los algoritmos hibridos, es decir el algoritmo generacional y los esquema de búsqueda.
+
+En el directorio "include" tenemos los ficheros "data.h", "funciones.h", "AGG.h", "random_ppio.h" que contienen las cabeceras de los ficheros cpp.
+
+En el directorio "obj" se guardan los ficheros .o
+
+Para ejecutar el programa ponemos en la terminal 
+-)si queremos con una semilla determinada: ./bin/main ./bin/datos/chr20a.dat tipo 44578 determinando el tipo de esquema de búsqueda (t,s,m)
+-)si usamos la semilla por defecto: ./bin/main ./bin/datos/chr20a.dat tipo determinando el tipo de esquema de búsqueda (t,s,m)
+-)si queremos ejecutarlos todos, usamos el script de la forma: ./script.sh
